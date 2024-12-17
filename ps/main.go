@@ -50,9 +50,8 @@ func main() {
 	}
 
 	type process struct {
-		name     string
-		pid      int
-		username string
+		name string
+		pid  int
 	}
 
 	procs := make([]*process, 0, len(procsFiles))
