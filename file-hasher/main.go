@@ -31,7 +31,6 @@ type Task struct {
 type Result struct {
 	filaPath string
 	hash     string
-	err      error
 }
 
 func main() {

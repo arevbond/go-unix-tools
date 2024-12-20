@@ -15,7 +15,6 @@ var name = flag.String("name", "", "file name to search")
 var workers = flag.Int("workers", 1, "amout of goroutines")
 
 var wg sync.WaitGroup
-var walWg sync.WaitGroup
 
 func main() {
 	start := time.Now()

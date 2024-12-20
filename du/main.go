@@ -23,9 +23,9 @@ func main() {
 func totalSize(path string) int64 {
 	var total int64
 	err := filepath.WalkDir(path, func(path string, d fs.DirEntry, err error) error {
-		info, err := d.Info()
-		if err != nil {
-			fmt.Println(err)
+		info, err2 := d.Info()
+		if err2 != nil {
+			fmt.Println(err2)
 			return nil
 		}
 		if *output {
